@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.streamlit/secrets.toml
+
+# data/pbp_model_data.parquet, data/wp_model.xgb, and data/metrics.json
+# are intentionally NOT ignored — they're small (~2.4MB total) and the
+# deployed dashboard reads them directly from the repo. If you regenerate
+# them (new seasons, retrained model), just commit the updated versions.
